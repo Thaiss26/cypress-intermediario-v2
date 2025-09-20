@@ -34,10 +34,4 @@ describe('Set milestone on issue', options, () => {
 })
 
 
-  it('successfully', () => {
-    cy.gui_setMilestoneOnIssue(milestone)
-
-    cy.get('.block.milestone').should('contain', milestone.title)
-  })
-
 

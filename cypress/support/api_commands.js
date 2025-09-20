@@ -56,6 +56,8 @@ Cypress.Commands.add('api_createLabel', (projectId, label) => {
     },
     headers: { Authorization: accessToken },
   })
+})
+
 
 Cypress.Commands.add('api_createMilestone', (projectId, milestone) => {
   cy.request({
@@ -64,6 +66,4 @@ Cypress.Commands.add('api_createMilestone', (projectId, milestone) => {
     body: { title: milestone.title },
     headers: { Authorization: accessToken },
   })
-})
-
 })
